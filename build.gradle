@@ -6,6 +6,9 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
+group 'com.hatiko.wrapper.ripple'
+version '1.0-SNAPSHOT'
+
 configurations {
     developmentOnly
     runtimeClasspath {
@@ -15,9 +18,6 @@ configurations {
         extendsFrom annotationProcessor
     }
 }
-
-group 'com.hatiko.wrapper.ripple'
-version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
