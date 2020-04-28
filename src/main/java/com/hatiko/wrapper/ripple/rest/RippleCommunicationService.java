@@ -1,6 +1,6 @@
 package com.hatiko.wrapper.ripple.rest;
 
-public interface CommunicationService {
+public interface RippleCommunicationService {
     void getAccountChannels();
     void getAccountCurrencies();
     void getAccountInfo();
