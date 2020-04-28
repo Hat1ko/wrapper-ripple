@@ -11,8 +11,18 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties("blockchain")
 @Component
 public final class BlockchainProperties {
+
     String uri;
+    Timeout timeout;
     Method method;
+
+    @Data
+    @FieldDefaults(level = AccessLevel.PRIVATE)
+    public static final class Timeout {
+
+        Integer read;
+        Integer connect;
+    }
 
     @Data
     @FieldDefaults(level = AccessLevel.PRIVATE)
