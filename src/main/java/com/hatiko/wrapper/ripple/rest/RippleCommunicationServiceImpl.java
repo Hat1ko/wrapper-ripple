@@ -1,5 +1,7 @@
 package com.hatiko.wrapper.ripple.rest;
 
+import com.hatiko.wrapper.ripple.dto.request.BlockchainRequest;
+import com.hatiko.wrapper.ripple.dto.response.AccountInfoResponse;
 import com.hatiko.wrapper.ripple.properties.BlockchainProperties;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
@@ -18,8 +20,8 @@ public class RippleCommunicationServiceImpl implements RippleCommunicationServic
     BlockchainProperties blockchainProperties;
 
     @Override
-    public void getAccountChannels() {
-
+    public AccountInfoResponse getAccountChannels(BlockchainRequest accountInfoRequest) {
+        return rippleNetwork.getForEntity(blockchainProperties.getUri(), AccountInfoResponse.class).getBody();
     }
 
     @Override
