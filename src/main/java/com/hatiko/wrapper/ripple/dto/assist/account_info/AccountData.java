@@ -13,20 +13,28 @@ public class AccountData {
 
     @JsonProperty("Account")
     String account;
+
     @JsonProperty("Balance")
     String balance;
+
     @JsonProperty("Flags")
     Integer flags;
+
     @JsonProperty("LedgerEntryType")
     String ledgerEntryType;
+
     @JsonProperty("OwnerCount")
     Integer ownerCount;
+
     @JsonProperty("PreviousTxnID")
     String previousTxnId;
+
     @JsonProperty("PreviousTxnLgrSeq")
     Integer previousTxnLgrSeq;
+
     @JsonProperty("Sequence")
     Integer sequence;
+
     @JsonProperty("index")
     String index;
 }

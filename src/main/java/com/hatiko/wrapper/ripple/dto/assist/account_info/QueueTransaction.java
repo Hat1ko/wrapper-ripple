@@ -13,12 +13,16 @@ public class QueueTransaction {
 
     @JsonProperty("auth_change")
     Boolean authChange;
+
     @JsonProperty("fee")
     String fee;
+
     @JsonProperty("fee_level")
     String feeLevel;
+
     @JsonProperty("max_spend_drops")
     String maxSpendDrops;
+
     @JsonProperty("seq")
     Integer seq;
 }

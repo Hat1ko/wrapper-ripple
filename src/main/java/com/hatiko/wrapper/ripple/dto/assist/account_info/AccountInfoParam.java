@@ -11,6 +11,7 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class AccountInfoParam {
 
+    @JsonProperty("account")
     String account;
     @JsonProperty("ledger_hash")
     String ledgerHash;
