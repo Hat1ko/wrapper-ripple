@@ -3,6 +3,7 @@ package com.hatiko.wrapper.ripple.dto.response;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.hatiko.wrapper.ripple.dto.assist.account_info.AccountData;
 import com.hatiko.wrapper.ripple.dto.assist.account_info.QueueData;
+import com.hatiko.wrapper.ripple.dto.assist.account_info.signer_list.SignerList;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Data;
@@ -18,16 +19,18 @@ public class AccountInfoResponse {
     @JsonProperty("account_data")
     AccountData accountData;
 
-    //TODO: implement class for place Object
     @JsonProperty("signer_lists")
-    List<Object> signerLists;
+    List<SignerList> signerLists;
 
     @JsonProperty("ledger_current_index")
     Integer ledgerCurrentIndex;
+
     @JsonProperty("ledger_index")
     Integer ledgerIndex;
+
     @JsonProperty("queue_data")
     QueueData queueData;
+
     @JsonProperty("validated")
     Boolean validated;
 }
