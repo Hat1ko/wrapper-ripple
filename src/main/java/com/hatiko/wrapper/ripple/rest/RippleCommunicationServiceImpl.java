@@ -26,7 +26,7 @@ public class RippleCommunicationServiceImpl implements RippleCommunicationServic
 
     @Override
     public void getAccountCurrencies() {
-
+        //in-process
     }
 
     @Override
